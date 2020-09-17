@@ -18,6 +18,7 @@ aside {
     top: 0;
     left: 0;
     overflow-x: hidden;
+    box-shadow: 5px 0 5px -5px #333;
 }
 
 .personality {
@@ -118,6 +119,7 @@ nav a:hover {
 
 main {
     margin-left: var(--aside-width);
+    width: calc(100% - var(--aside-width));
     font-size: 28px;
 }
 
@@ -126,7 +128,17 @@ main {
 }
 
 .section_about {
-    background-color: #f3faff;
+    background-image: url("/img/forest1024.jpg");
+    width: 100%;
+    background-size: cover;
+}
+
+.section_about p {
+    margin: 0;
+    padding-top: 10%;
+    padding-left: 10%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8em;
 }
 
 
