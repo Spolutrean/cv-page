@@ -41,13 +41,47 @@
             <a href="https://t.me/spolutrean">
                 <img src="img/telegram.png">
             </a>
+            <a href="https://www.linkedin.com/in/ydsviridov/">
+                <img src="img/linkedIn.png">
+            </a>
         </section>
     </aside>
     <main>
         <section class="section section_about" id="about">
             <p>I am <span id="hwoAmI"></span></p>
         </section>
-        <section class="section section_education" id="education"></section>
+        <section class="section section_education" id="education">
+            <section class="education_main">
+                <div class="card">
+                    <h3 style="margin-bottom: 0;"><b>ITMO University</b></h3>
+                    <span style="font-size: smaller; opacity: 50%;">Bachelor degree 2017-2022</span>
+                    <ul>
+                        <li>Major: Computer science</li>
+                        <li>Minor: Information Technology and Programming</li>
+                        <li>
+                            Completed courses:
+                            <br>
+                            <span class="badge badge_purple">Data&nbsp;Structures</span>
+                            <span class="badge badge_green">Algorithms</span>
+                            <span class="badge badge_red">C#</span>
+                            <span class="badge badge_blue">C++</span>
+                            <span class="badge badge_cyan">Java</span>
+                            <span class="badge badge_orange">OOP</span>
+
+                            <span class="badge badge_purple">Databases</span>
+                            <span class="badge badge_green">Machine&nbsp;Learning</span>
+                            <span class="badge badge_red">Android&nbsp;development</span>
+                            <span class="badge badge_blue">Linux&nbsp;administration</span>
+                            <span class="badge badge_cyan">Networks</span>
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="education_extra">
+                <h4 class="education_extra_label" style="margin-bottom: 0;"><b>Extra courses</b></h4>
+            </section>
+        </section>
         <section class="section section_experience" id="experience"></section>
         <section class="section section_skills" id="skills"></section>
     </main>
