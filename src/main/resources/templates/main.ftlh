@@ -5,7 +5,9 @@
 <#--    <link rel="stylesheet" href="./style/outlines.css">-->
     <link rel="stylesheet" href="./style/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./scripts/typed.js"></script>
+    <script src="./scripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="./scripts/noframework.waypoints.min.js"></script>
     <meta charset="UTF-8">
     <meta name="description" content="This is the website of Iaroslav Sviridov's portfolio">
     <meta name="keywords" content="Sviridov Iaroslav, Sviridov Yaroslav, Java, C#, C++, backend, programmer">
@@ -52,14 +54,15 @@
         </section>
         <section class="section section_education" id="education">
             <section class="education_main">
-                <div class="card">
-                    <h3 style="margin-bottom: 0;"><b>ITMO University</b></h3>
+                <div class="education_itmo willAppear">
+                    <div class="card">
+                    <h2 style="margin-bottom: 0;"><b>ITMO University</b></h2>
                     <span style="font-size: smaller; opacity: 50%;">Bachelor degree 2017-2022</span>
                     <ul>
                         <li>Major: Computer science</li>
                         <li>Minor: Information Technology and Programming</li>
                         <li>
-                            Completed courses:
+                            Received knowledge:
                             <br>
                             <span class="badge badge_purple">Data&nbsp;Structures</span>
                             <span class="badge badge_green">Algorithms</span>
@@ -77,9 +80,30 @@
                         </li>
                     </ul>
                 </div>
+                </div>
             </section>
             <section class="education_extra">
-                <h4 class="education_extra_label" style="margin-bottom: 0;"><b>Extra courses</b></h4>
+                <div class="education_scs willAppear">
+                    <div class="card">
+                        <h3 style="margin-bottom: 0;"><b>Summer computer schools and camps</b></h3>
+                        <span style="font-size: smaller; opacity: 50%;">2015,2016,2017</span>
+                        <ul>
+                            <li>Strict entrance tests, more than 10 people on each place</li>
+                            <li>Four weeks of advanced algorithms and data structures</li>
+                            <li>Final exam with a good grade</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education_samsung willAppear">
+                    <div class="card">
+                        <h3 style="margin-bottom: 0;"><b>IT School Samsung</b></h3>
+                        <span style="font-size: smaller; opacity: 50%;">2014-2015</span>
+                        <ul>
+                            <li>One year course with weakly classes</li>
+                            <li>Final project was successfully defended</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </section>
         <section class="section section_experience" id="experience"></section>
@@ -97,6 +121,18 @@
             startDelay: 2000
         };
         var typed = new Typed('#hwoAmI', options);
+    </script>
+    <script>
+        let willAppear = document.getElementsByClassName("willAppear");
+        for (let i = 0; i < willAppear.length; i++) {
+            new Waypoint({
+                element: willAppear[i],
+                handler: function() {
+                    willAppear[i].classList.add("appeared");
+                },
+                offset: '75%'
+            });
+        }
     </script>
 </body>
 </html>

@@ -163,18 +163,16 @@ main {
 }
 
 .education_main {
-    width: 70%;
+    width: 55%;
     height: 100%;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: black solid 2px;
 }
 
-.education_main div {
-    height: 60%;
-    width: 70%;
+.education_itmo {
+    width: 80%;
     background-color: white;
 }
 
@@ -218,16 +216,32 @@ main {
 }
 
 .education_extra {
-    width: 30%;
+    width: 45%;
     height: 100%;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.education_extra_label {
-    height: 10%;
-    text-align: center;
+.education_scs {
+    width: 80%;
+    background-color: white;
+}
+
+.education_samsung {
+    width: 80%;
+    background-color: white;
+}
+
+.willAppear {
+    opacity: 0;
+}
+
+.willAppear.appeared {
+    opacity: 1;
+    transition: all 1.4s ease;
 }
 
 .section_experience {
