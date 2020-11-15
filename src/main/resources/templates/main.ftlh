@@ -25,10 +25,10 @@
             </div>
         </section>
         <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Work experience</a>
-            <a href="#skills">Skills</a>
+            <a class="navigationItem" href="#about">About</a>
+            <a class="navigationItem" href="#education">Education</a>
+            <a class="navigationItem" href="#experience">Work experience</a>
+            <a class="navigationItem" href="#skills">Skills</a>
         </nav>
         <form class="downloadCvSection">
             <button formaction="/docs/cv.pdf">Download CV</button>
@@ -49,10 +49,10 @@
         </section>
     </aside>
     <main>
-        <section class="section section_about" id="about">
+        <section class="globalSection section_about" id="about">
             <p>I am <span id="hwoAmI"></span></p>
         </section>
-        <section class="section section_education" id="education">
+        <section class="globalSection section_education" id="education">
             <section class="education_main">
                 <div class="education_itmo willAppear">
                     <div class="card">
@@ -106,8 +106,8 @@
                 </div>
             </section>
         </section>
-        <section class="section section_experience" id="experience"></section>
-        <section class="section section_skills" id="skills"></section>
+        <section class="globalSection section_experience" id="experience"></section>
+        <section class="globalSection section_skills" id="skills"></section>
     </main>
     <script>
         const Typed = window.Typed;
@@ -131,6 +131,41 @@
                     willAppear[i].classList.add("appeared");
                 },
                 offset: '75%'
+            });
+        }
+    </script>
+    <script>
+        let navigationItems = document.getElementsByClassName("navigationItem");
+        let sections = document.getElementsByClassName("globalSection");
+        for (let i = 0; i < sections.length; i++) {
+            new Waypoint({
+                element: sections[i],
+                handler: function(direction) {
+                    if(direction !== "down") return;
+
+                    for (let j = 0; j < navigationItems.length; j++) {
+                        if (i === j) {
+                            navigationItems[j].classList.add("selected");
+                        } else {
+                            navigationItems[j].classList.remove("selected");
+                        }
+                    }
+                }
+            });
+            new Waypoint({
+                element: sections[i],
+                handler: function(direction) {
+                    if(direction !== "up") return;
+
+                    for (let j = 0; j < navigationItems.length; j++) {
+                        if (i === j) {
+                            navigationItems[j].classList.add("selected");
+                        } else {
+                            navigationItems[j].classList.remove("selected");
+                        }
+                    }
+                },
+                offset: '-2'
             });
         }
     </script>
