@@ -43,7 +43,7 @@ aside {
 }
 
 .nameContainer h1 {
-    font-size: 1.8em;
+    font-size: 2.3em;
 }
 
 
@@ -62,7 +62,7 @@ nav {
 }
 
 nav a {
-    text-decoration:none;
+    text-decoration: none;
     color: black;
     opacity: 70%;
     font-size: 1.3em;
@@ -93,14 +93,14 @@ nav a:hover {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
     padding: 2px 16px;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .downloadCvSection button:hover {
@@ -338,7 +338,7 @@ main {
     transition-duration: 0.7s;
 }
 
-.yandex::first-letter {
+.yandex ::first-letter {
     color: red;
 }
 
@@ -348,7 +348,7 @@ main {
     font-size: 1.3em;
 }
 
-.yandex.accordionItemSelected::first-letter {
+.yandex.accordionItemSelected ::first-letter {
     color: white;
 }
 
@@ -358,7 +358,7 @@ main {
     font-size: 1.3em;
 }
 
-.yandex:hover::first-letter {
+.yandex:hover ::first-letter {
     color: white;
 }
 
@@ -368,7 +368,6 @@ main {
 
 
 .accordionDescriptionsBlockContainer {
-    /*background-color: aquamarine;*/
     -webkit-border-top-right-radius: 5px;
     -webkit-border-bottom-right-radius: 5px;
     width: 65%;
@@ -377,22 +376,111 @@ main {
 }
 
 .accordionDescriptionBlock {
-    display: none;
-    /*height: 100%;*/
-    /*width: 100%;*/
     -webkit-border-top-right-radius: 5px;
     -webkit-border-bottom-right-radius: 5px;
     padding: 1em;
-}
-
-.accordionDescriptionBlock h2 {
-    margin: 0;
+    display: none;
 }
 
 .accordionDescriptionBlock.accordionBlockShowed {
     display: block;
 }
 
+
+.accordionDescriptionBlock h2 {
+    margin: 0;
+}
+
 .sectionSkills {
-    background-color: #9779ec;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsContainer {
+    width: 80%;
+    height: 80%;
+}
+
+.skills {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.skills h2 {
+    margin: 0;
+}
+
+.languagesSkills {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.technologiesSkills {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.skill h3 {
+    font-size: 0.85em;
+    margin: 0.25em 0;
+    opacity: 0;
+}
+
+.skill h3.appeared {
+    opacity: 1;
+    transition-duration: 0.45s;
+}
+
+
+.skillBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 65%;
+}
+
+.color1 .skillBarElement {
+    background-color: #00a65a;
+    /*background-color: #f56954;*/
+    /*background-color: #0073b7;*/
+    /*background-color: #ba79cb;*/
+    /*background-color:  #00b29e;*/
+}
+
+
+.skillBarElement {
+    opacity: 0;
+    width: 9%;
+    height: 1.2em;
+    background-color: cadetblue;
+    border: 1px solid black;
+    transform: skew(-20deg);
+}
+
+.skillBarElement.appeared {
+    opacity: 1;
+    transition-duration: 0.3s;
 }
