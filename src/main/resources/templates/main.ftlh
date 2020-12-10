@@ -11,6 +11,7 @@
     <script src="./scripts/typed.js"></script>
     <script src="./scripts/jquery-3.5.1.slim.min.js"></script>
     <script src="./scripts/noframework.waypoints.min.js"></script>
+    <script src="./scripts/anime.js"></script>
     <meta charset="UTF-8">
     <meta name="description" content="This is the website of Iaroslav Sviridov's portfolio">
     <meta name="keywords" content="Sviridov Iaroslav, Sviridov Yaroslav, Java, C#, C++, backend, programmer">
@@ -32,24 +33,11 @@
         <a class="navigationItem" href="#education">Education</a>
         <a class="navigationItem" href="#experience">Work experience</a>
         <a class="navigationItem" href="#skills">Skills</a>
+        <a class="navigationItem" href="#contacts">Contacts</a>
     </nav>
     <form class="downloadCvSection">
         <button formaction="/docs/cv.pdf">Download CV</button>
     </form>
-    <section class="contacts">
-        <a href="https://github.com/Spolutrean">
-            <img src="img/github.png">
-        </a>
-        <a href="mailto:ys9617890962@gmail.com">
-            <img src="img/email.png">
-        </a>
-        <a href="https://t.me/spolutrean">
-            <img src="img/telegram.png">
-        </a>
-        <a href="https://www.linkedin.com/in/ydsviridov/">
-            <img src="img/linkedIn.png">
-        </a>
-    </section>
 </aside>
 <main>
     <section class="globalSection sectionAbout" id="about">
@@ -313,6 +301,96 @@
             </div>
         </div>
     </section>
+    <section class="globalSection sectionContacts" id="contacts">
+        <section class="contactsMain">
+            <div class="willAppear contactsContainer">
+                <div class="card contacts">
+                    <div class="contact">
+                        <a href="https://github.com/Spolutrean">
+                            <img src="img/github.png">
+                            <h3>Github</h3>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="https://t.me/spolutrean">
+                            <img src="img/telegram.png">
+                            <h3>Telegram</h3>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="https://www.linkedin.com/in/ydsviridov/">
+                            <img src="img/linkedIn.png">
+                            <h3>LinkedIn</h3>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="mailto:ys9617890962@gmail.com">
+                            <img src="img/email.png">
+                            <h3>Email</h3>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="tel:+7-961-789-09-62">
+                            <img src="img/phone.png">
+                            <h3>Phone</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="animationWrapper">
+            <div class="layeredAnimations">
+                <svg class="large shape" viewBox="0 0 96 96">
+                    <defs>
+                        <linearGradient id="circleGradient" x1="0%" x2="100%" y1="20%" y2="80%">
+                            <stop stop-color="#373734" offset="0%"/>
+                            <stop stop-color="#242423" offset="50%"/>
+                            <stop stop-color="#0D0D0C" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="48" cy="48" r="28" fill-rule="evenodd" stroke-linecap="square" fill="url(#circleGradient)"/>
+                </svg>
+                <svg class="small shape colorSmall" viewBox="0 0 96 96">
+                    <polygon fill-rule="evenodd" points="48 17.28 86.4 80.11584 9.6 80.11584" stroke-linecap="square"/>
+                </svg>
+                <svg class="large shape" viewBox="0 0 96 96">
+                    <defs>
+                        <linearGradient id="triangleGradient" x1="0%" x2="100%" y1="20%" y2="80%">
+                            <stop stop-color="#373734" offset="0%"/>
+                            <stop stop-color="#242423" offset="50%"/>
+                            <stop stop-color="#0D0D0C" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <polygon fill-rule="evenodd" points="48 17.28 86.4 80.11584 9.6 80.11584" stroke-linecap="square" fill="url(#triangleGradient)"/>
+                </svg>
+                <svg class="xSmall shape colorXSmall" viewBox="0 0 96 96">
+                    <polygon fill-rule="evenodd" points="48 17.28 86.4 80.11584 9.6 80.11584" stroke-linecap="square"/>
+                </svg>
+                <svg class="xSmall shape colorXSmall" viewBox="0 0 96 96">
+                    <rect width="48" height="48" x="24" y="24" fill-rule="evenodd" stroke-linecap="square"/>
+                </svg>
+                <svg class="small shape colorSmall" viewBox="0 0 96 96">
+                    <rect width="48" height="48" x="24" y="24" fill-rule="evenodd" stroke-linecap="square"/>
+                </svg>
+                <svg class="large shape" viewBox="0 0 96 96">
+                    <defs>
+                        <linearGradient id="rectGradient" x1="0%" x2="100%" y1="20%" y2="80%">
+                            <stop stop-color="#373734" offset="0%"/>
+                            <stop stop-color="#242423" offset="50%"/>
+                            <stop stop-color="#0D0D0C" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="48" height="48" x="24" y="24" fill-rule="evenodd" stroke-linecap="square" fill="url(#rectGradient)"/>
+                </svg>
+                <svg class="small shape colorSmall" viewBox="0 0 96 96">
+                    <circle cx="48" cy="48" r="32" fill-rule="evenodd" stroke-linecap="square"/>
+                </svg>
+                <svg class="xSmall shape colorXSmall" viewBox="0 0 96 96">
+                    <circle cx="48" cy="48" r="32" fill-rule="evenodd" stroke-linecap="square"/>
+                </svg>
+            </div>
+        </section>
+    </section>
 </main>
 <script>
     const Typed = window.Typed;
@@ -406,7 +484,104 @@
                 }
             }
         },
-        offset: '75%'
+        offset: '75%',
+        triggerOnce: true
+    });
+</script>
+<script>
+    function fitElementToParent(el, padding) {
+        let timeout = null;
+
+        function resize() {
+            if (timeout) clearTimeout(timeout);
+            anime.set(el, {scale: 1});
+            let pad = padding || 0;
+            let parentEl = el.parentNode;
+            let elOffsetWidth = el.offsetWidth - pad;
+            let parentOffsetWidth = parentEl.offsetWidth;
+            let ratio = parentOffsetWidth / elOffsetWidth;
+            timeout = setTimeout(anime.set(el, {scale: ratio}), 10);
+        }
+        resize();
+        window.addEventListener('resize', resize);
+    }
+
+    let layeredAnimationFunction = (function() {
+        let layeredAnimationEl = document.querySelector('.layeredAnimations');
+        let shapeEls = layeredAnimationEl.querySelectorAll('.shape');
+        let triangleEl = layeredAnimationEl.querySelector('polygon');
+        let trianglePoints = triangleEl.getAttribute('points').split(' ');
+        let easings = ['easeInOutQuad', 'easeInOutCirc', 'easeInOutSine', 'spring'];
+
+        for (let i = 0; i < shapeEls.length; ++i) {
+            shapeEls[i].style.opacity = "1";
+        }
+
+        fitElementToParent(layeredAnimationEl);
+
+        function createKeyframes(value) {
+            let keyframes = [];
+            for (let i = 0; i < 30; i++) keyframes.push({ value: value });
+            return keyframes;
+        }
+
+        function animateShape(el) {
+            let circleEl = el.querySelector('circle');
+            let rectEl = el.querySelector('rect');
+            let polyEl = el.querySelector('polygon');
+
+            let animation = anime.timeline({
+                targets: el,
+                duration: function() { return anime.random(600, 2200); },
+                easing: function() { return easings[anime.random(0, easings.length - 1)]; },
+                complete: function(anim) { animateShape(anim.animatables[0].target); },
+            })
+                .add({
+                    translateX: createKeyframes(function(el) {
+                        return el.classList.contains('large') ? anime.random(-200, 200) : anime.random(-290, 290);
+                    }),
+                    translateY: createKeyframes(function(el) {
+                        return el.classList.contains('large') ? anime.random(-80, 80) : anime.random(-140, 140);
+                    }),
+                    rotate: createKeyframes(function() { return anime.random(-180, 180); }),
+                }, 0);
+            if (circleEl) {
+                animation.add({
+                    targets: circleEl,
+                    r: createKeyframes(function() { return anime.random(32, 72); }),
+                }, 0);
+            }
+            if (rectEl) {
+                animation.add({
+                    targets: rectEl,
+                    width: createKeyframes(function() { return anime.random(64, 120); }),
+                    height: createKeyframes(function() { return anime.random(64, 120); }),
+                }, 0);
+            }
+            if (polyEl) {
+                animation.add({
+                    targets: polyEl,
+                    points: createKeyframes(function() {
+                        let scale = anime.random(72, 180) / 100;
+                        return trianglePoints.map(function(p) { return p * scale; }).join(' ');
+                    }),
+                }, 0);
+            }
+
+        }
+
+        for (let i = 0; i < shapeEls.length; i++) {
+            animateShape(shapeEls[i]);
+        }
+    });
+
+    new Waypoint({
+        element: document.getElementsByClassName("animationWrapper")[0],
+        handler: function () {
+            layeredAnimationFunction();
+        },
+        triggerOnce: true,
+        offset: '50%'
     });
 </script>
 </body>

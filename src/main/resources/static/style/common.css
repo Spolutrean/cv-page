@@ -4,10 +4,12 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 aside {
@@ -79,7 +81,7 @@ nav a:hover {
 }
 
 .downloadCvSection {
-    height: 10%;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,34 +115,10 @@ nav a:hover {
     background: transparent;
     box-shadow: none;
 
-    height: 70%;
+    height: 40%;
     width: 45%;
     font-size: 1.3em;
     color: black;
-}
-
-.contacts {
-    background-color: white;
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contacts a img {
-    border-radius: 50%;
-    height: 42px;
-    width: 42px;
-    transition: all 0.2s ease;
-}
-
-.contacts a img:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.contacts a {
-    display: flex;
 }
 
 main {
@@ -404,6 +382,7 @@ main {
 }
 
 .skills {
+    padding: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -483,4 +462,130 @@ main {
 .skillBarElement.appeared {
     opacity: 1;
     transition-duration: 0.3s;
+}
+
+.sectionContacts {
+    background: whitesmoke;
+    display: flex;
+}
+
+.contactsMain {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactsContainer {
+    height: 70%;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.contacts {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact a {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.contact a img {
+    margin-left: 1.7em;
+    order-radius: 50%;
+    height: 42px;
+    width: 42px;
+    transition: all 0.2s ease;
+}
+
+.contact a:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.contact a h3 {
+    margin: 0 0 0 1em;
+    font-size: 0.85em;
+    align-self: center;
+    color: black;
+
+}
+
+/*animation*/
+
+.animationWrapper {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.layeredAnimations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.layeredAnimations .shape {
+    position: absolute;
+    top: 50%;
+    overflow: visible;
+    stroke: transparent;
+    stroke-width: 1px;
+    fill: url(#shapesGradient);
+    opacity: 0;
+}
+
+@media (min-width: 740px) {
+    .layeredAnimations .shape {
+        stroke-width: .5px;
+    }
+}
+
+.layeredAnimations .large.shape {
+    width: 128px;
+    height: 128px;
+    margin-top: -64px;
+}
+
+.layeredAnimations .small.shape {
+    width: 64px;
+    height: 64px;
+    margin-top: -32px;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.layeredAnimations .xSmall.shape {
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.colorSmall {
+    color: #FF4B4B;
+}
+
+.colorXSmall {
+    color: #00a65a;
 }
