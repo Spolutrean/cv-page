@@ -482,10 +482,10 @@
                         element.parentElement.parentElement.firstElementChild.classList.add("appeared");
                     }, i * 15);
                 }
+                this.destroy();
             }
         },
-        offset: '75%',
-        triggerOnce: true
+        offset: '75%'
     });
 </script>
 <script>
@@ -579,8 +579,8 @@
         element: document.getElementsByClassName("animationWrapper")[0],
         handler: function () {
             layeredAnimationFunction();
+            this.destroy();
         },
-        triggerOnce: true,
         offset: '50%'
     });
 </script>
