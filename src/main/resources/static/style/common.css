@@ -680,4 +680,8 @@ main {
     .contact a {
         margin: 2vw 0;
     }
+
+    .contact a img {
+        margin-left: 1.2em;
+    }
 }
