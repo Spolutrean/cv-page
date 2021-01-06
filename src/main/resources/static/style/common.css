@@ -117,7 +117,7 @@ nav a:hover {
 
     height: 40%;
     width: 45%;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     color: black;
 }
 
@@ -667,10 +667,15 @@ main {
         width: 100%;
     }
     .contactsContainer {
-        width: 50%;
+        width: 80%;
     }
     .contacts {
         align-items: unset;
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+    .contact {
+        width: 200px;
     }
     .contact a {
         margin: 2vw 0;
